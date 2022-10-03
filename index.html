@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <title></title>
+  <script type="text/javascript">
+      var i = 0;
+    function move() {
+    if (i == 0) {
+      i = 1;
+      var elem = document.getElementById("myBar");
+      var width = 1;
+      var id = setInterval(frame, 10);
+      function frame() {
+        if (width >= 100) {
+          clearInterval(id);
+          i = 0;
+        } else {
+          width++;
+          elem.style.width = width + "%";
+        }
+      }
+    }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&family=Outfit&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="header">
+      <div class="logo">
+        <img src="images/logo.png" alt="logo" class="logoimg">
+      </div>
+      <div class="explore">
+        Explore
+      </div>
+      <div class="problems">
+        Problems
+      </div>
+      <div class="contest">
+        <a href="contestpage.html" class="hplink">Contest</a>
+      </div>
+      <div class="discuss">
+        Discuss
+      </div>
+      <div class="interview">
+        Interview
+      </div>
+      <div class="store">
+        <span class="storefull">Store</span>
+        <span class="storeshort">=</span>
+      </div>
+      <div class="premium">
+        Premium
+      </div>
+      <div class="notif">
+        <img src="images/bell.png" alt="bell" class="icons1" >
+      </div>
+      <div class="streak">
+        <img src="images/fire.png" alt="fire" class="icons1">
+      </div>
+      <div class="proicon">
+        <img src="images/user.png" alt="user" class="icons1 ">
+      </div>
+    </div>
+    <div class="profile">
+      <div class="pr1">
+        <img src="images/user.png" alt="user" class="pfp">
+        <h2 class="fullname"><a href="https://www.linkedin.com/in/ritika99a/" class="linkedin">Test user</a></h2>
+        <p class="username">username</p>
+        <h3 class="rank">Rank ~ 50000</h3>
+      </div>
+      <div class="pr2">
+        Edit profile
+      </div>
+      <div class="pr3">
+        <div class="pr3img">
+          <img src="images/pin.png" alt="pin" class="icons1">
+        </div>
+        <div class="pr3text">
+          India
+        </div>
+        <div class="pr3img">
+          <img src="images/cap.png" alt="cap" class="icons1">
+        </div>
+        <div class="pr3text">
+          MNNIT_Allahabad
+        </div>
+      </div>
+      <div class="pr4">
+        <div class="pr4head">
+          Community Stats
+        </div>
+        <div class="pr4img">
+          <img src="images/eye.png" alt="eye" class="icons1">
+        </div>
+        <div class="pr4text1">
+          Views 0
+        </div>
+        <div class="pr4text2">
+          Last week 0
+        </div>
+        <div class="pr4img">
+          <img src="images/checklist.png" alt="tick" class="icons1">
+        </div>
+        <div class="pr4text1">
+          Solutions 0
+        </div>
+        <div class="pr4text2">
+          Last week 0
+        </div>
+        <div class="pr4img">
+          <img src="images/bubble-chat.png" alt="chat" class="icons1">
+        </div>
+        <div class="pr4text1">
+          Discuss 0
+        </div>
+        <div class="pr4text2">
+          Last week 0
+        </div>
+        <div class="pr4img">
+          <img src="images/star.png" alt="star" class="icons1">
+        </div>
+        <div class="pr4text1">
+          Reputation 0
+        </div>
+        <div class="pr4text2">
+          Last week 0
+        </div>
+      </div>
+      <div class="pr5">
+        <div class="pr5head">
+          Languages & Skills
+        </div>
+        <ul class="pr5content">
+          <li class="pr5text pr5odd">hash-table</li>
+          <li class="pr5x pr5odd">x30</li>
+          <li class="pr5text pr5even">Arrays</li>
+          <li class="pr5x pr5even">x10</li>
+          <li class="pr5text pr5odd">String</li>
+          <li class="pr5x pr5odd">x13</li>
+          <li class="pr5text pr5even">two-pointers</li>
+          <li class="pr5x pr5even">x10</li>
+        </ul>
+      </div>
+    </div>
+  <div class="solved">
+    <div class="solved_problems">
+      Solved problems
+    </div>
+    <div class="pro_text">
+      <div class="protext1">
+        Easy
+      </div>
+      <div class="protext2">
+        Medium
+      </div>
+      <div class="protext3">
+        Hard
+      </div>
+    </div>
+    <div class="progress">
+
+      <div id="myProgress1" class="bar1">
+      <div id="myBar1">21%</div>
+      </div>
+
+      <div id="myProgress2" class="bar2">
+      <div id="myBar2">51%</div>
+      </div>
+
+      <div id="myProgress3" class="bar3">
+      <div id="myBar3">18%</div>
+      </div>
+
+    </div>
+  </div>
+  <div class="badges">
+    <div class="bdg1">
+    Badges
+    </div>
+    <div class="bdg2">
+      0
+    </div>
+    <div class="bdg3">
+      <p><span class="missed_badges">Missed badges</span><br>Oct leetcoding challenge</p>
+    </div>
+    <div class="bdg4">
+      <img src="images/badge4.png" alt="badge" class="badge">
+    </div>
+  </div>
+  <div class="questions">
+    <div class="qbar">
+      <div class="recent">
+        <img src="images/clipboard.png" alt="clip" class="icons2 qbarimg">
+        Recent
+      </div>
+      <div class="solutions">
+        <img src="images/checklist.png" alt="check" class="icons2 qbarimg">
+        Solutions
+      </div>
+      <div class="discuss">
+        <img src="images/bubble-chat.png" alt="chat" class="icons2 qbarimg">
+        Discuss
+      </div>
+      <div class="view">
+        <span class="short">></span>
+        <span class="full">View all submissions ></span>
+      </div>
+    </div>
+    <div class="que" id="q1">
+      Arranging coins
+    </div>
+    <div class="time" id="t1">
+      1 day ago
+    </div>
+    <div class="que" id="q2">
+      Clone graph
+    </div>
+    <div class="time" id="t2">
+      4 days ago
+    </div>
+    <div class="que" id="q3">
+      Maximum area of island
+    </div>
+    <div class="time" id="t3">
+      1 week ago
+    </div>
+    <div class="que" id="q4">
+      Binary tree cameras
+    </div>
+    <div class="time" id="t4">
+      2 weeks ago
+    </div>
+    <div class="que" id="q5">
+      Next permutations
+    </div>
+    <div class="time" id="t5">
+      2 weeks ago
+    </div>
+    <div class="que" id="q6">
+      Number of dice rolls with target sum
+    </div>
+    <div class="time" id="t6">
+      2 weeks ago
+    </div>
+    <div class="que" id="q7">
+      Minimum path sum
+    </div>
+    <div class="time" id="t7">
+      2 weeks ago
+    </div>
+    <div class="que" id="q8">
+      Pacific Atlantic Water flow
+    </div>
+    <div class="time" id="t8">
+      2 weeks ago
+    </div>
+
+  </div>
+
+  </div>
+</body>
+
+</html>
